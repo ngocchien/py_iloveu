@@ -1,0 +1,77 @@
+[
+  {
+    "teamId": 1,
+    "menu": [
+      {
+        "name": "HOME_PAGE"
+      },
+      {
+        "name": "FORECAST",
+        "child": [
+          "IMPORT_FORECAST",
+          "FORECAST_MANAGEMENT",
+          "CUSTOMER_DEFINE_FIELD",
+          "FORECAST_SUMMARY"
+        ]
+      },
+      {
+        "name": "ORDER_PLAN",
+        "child": [
+          "ORDER_PLAN_MANAGEMENT"
+        ]
+      },
+      {
+        "name": "TRADING_CONTRACT",
+        "child": []
+      },
+      {
+        "name": "PURCHASE_ORDER",
+        "child": []
+      },
+      {
+        "name": "REPORT",
+        "child": []
+      },
+      {
+        "name": "SUPPLIER",
+        "child": []
+      }
+    ],
+    "api": [
+      {
+        "name": "forecastList",
+        "access": "read",
+        "path": "/api/forecast"
+      },
+      {
+        "name": "forecastDetail",
+        "access": "read",
+        "path": "/api/forecast/<int:forecast_id>"
+      },
+      {
+        "name": "customer",
+        "access": "read",
+        "path": "/api/customer"
+      },
+      {
+        "name": "customerDetail",
+        "access": "write",
+        "path": "/api/customer/<int:customer_id>"
+      }
+    ]
+  },
+  {
+    "teamId": 2,
+    "menu": [
+      {
+        "name": "HOME_PAGE"
+      },
+      {
+        "name": "ORDER_PLAN",
+        "child": [
+          "ORDER_PLAN_MANAGEMENT"
+        ]
+      }
+    ]
+  }
+]
